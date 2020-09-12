@@ -3,6 +3,9 @@ A website template for podcasts created from scratch using HTML, PHP, CSS, JS, a
 
 Static demo available here: https://essaysonmusic-template.web.app/index.html
 
+![](screenshot1.png)
+![](screenshot2.png)
+
 # 1. Database structure
 
 DB name: podcast
