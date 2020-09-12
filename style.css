@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap');
+ 
+:root{
+    --cream: #F9E5DA;
+    --tan: #F0C0A4;
+    --purple: #86728B;
+    --indigo: #575576;
+    --dark: #403F56;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,1), transparent), url("img/bg.png");
+    background-size:cover;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--tan);
+}
+
+
+h1, h2, h3, h4, h5, a, label, select { 
+    margin: 0.5rem;
+	font-family: Arial; 
+	font-weight: normal; 
+	font-style: normal; 
+    text-align: center;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    margin: 0.5rem;
+    font-family:  'Arbutus Slab', serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--dark);
+    min-height: 95vh;
+}
+
+/* NAVEGACIÓN */
+
+nav{
+        position: sticky;
+        background: rgba(0,0,0,0.7);
+        z-index: 1000;
+        top: 0;
+    }
+
+nav ul{
+    margin-top: 5vh;
+    background-color: transparent;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul a{
+    width: 8em;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--cream);
+    display: block;
+    transition: all 0.3s;
+}
+
+nav ul a:hover{
+    background-color: var(--tan);
+    color: var(--dark);
+    transition: all 0.3s;
+    box-shadow: 5px 5px var(--cream);
+}
+    
+nav ul a.active{
+    background-color: var(--tan);
+    color: var(--dark);
+    box-shadow: 5px 5px var(--cream);
+}
+
+nav li{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+
+}
+
+/* PRINCIPAL */
+
+.entry{
+    width: 100%;
+    margin: 0;
+}
+.main-content{
+    display:flex;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.logo h1{
+    position: absolute;
+    top: 30%;
+    color: var(--tan);
+    font-size: 4rem;
+    line-height: 1.15;
+    letter-spacing: 2px;
+}
+
+.logo p{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    color: var(--cream);
+    font-size: 3rem;
+    letter-spacing: 7px;
+}
+
+
+.logo{
+    width: auto;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.logo-bg img{
+    width: 95%;
+    filter: drop-shadow(10px 10px 4px #000);
+}
+
+.logo-text img{
+    padding-top: 22%;
+    padding-left: 5%;
+    width: 100%;
+    transition: 600ms;
+    filter: invert(0) drop-shadow(10px 10px 4px #000);
+}
+
+.logo-text img:hover{
+    transition: 400ms;
+    filter:invert(80%) drop-shadow(10px 10px 4px var(--cream));
+    
+}
+
+
+.head-tags{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.date{
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    color: var(--cream);
+    margin: 0;
+    line-height: 2.5rem;
+    text-align: right;
+}
+
+.new{
+    background-color: var(--tan);
+    padding: 0.5rem 2rem;
+    color: var(--dark);
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.new h4{
+    color: var(--dark);
+}
+
+.index-ep{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(87,85,118,0.7);
+}
+
+.ep-cover{
+    width:9rem;
+    height: 9rem;
+    padding: 0.5rem;
+}
+
+.ep-content{
+    width: 100%;
+}
+
+.ep-content .title{
+    text-align: left;
+    width: auto;
+}
+
+.ep-content p{
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.ep-content a{
+    font-family: 'Arbutus Slab', serif;
+    color: var(--tan);
+    font-size: 0.8rem;
+    transition: 200ms;
+    margin: 0;
+}
+
+.ep-content a:hover{
+    color: var(--cream);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.ep-content h3{
+    color: var(--cream);
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.audio-container audio{
+    height: 2rem;
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+  border-radius: 100px;
+    padding-left: 0.5rem;
+}
+
+.audio-container a{
+    text-decoration: none;
+    margin: 0;
+    padding-right: 0.5rem;
+}
+
+.entry i{
+    color: var(--cream);
+    transition: 400ms;
+}
+
+.entry i:hover{
+    color:var(--tan);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.audio-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(87,85,118,0.7);
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.mixtape-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(87,85,118,0.7);
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.8rem;
+    color: var(--cream);
+    transition: 200ms;
+}
+
+.index-mixtape-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(87,85,118,0.7);
+    width: auto;
+    color: var(--cream);
+    transition: 200ms;
+}
+
+.mixtape-container:hover{
+    color: var(--tan);
+    transition: 200ms;
+}
+
+.index-mixtape-container:hover{
+    color: var(--tan);
+    transition: 200ms;
+}
+
+/* EPISODES */
+
+.audio-container-ep a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.episodes-content{
+    width: 50%;
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.episodes-ep{
+    display: flex;
+    margin-top: 1rem;
+    width: auto;
+    height: 9rem;
+    background-color: rgba(87,85,118,0.7);
+    padding: 1rem;
+}
+
+.audio-container-ep{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(87,85,118,0.7);
+    width: auto;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.audio-container-ep audio{
+    width: 90%;
+    height: 2rem;
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    border-radius: 100px;
+}
+
+.searchbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.searchbar label{
+    display:block;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--tan);
+    color: var(--dark);
+    line-height: 2.3rem;
+    width: 5.4rem;
+    height: 2rem;
+}
+
+.selector form{
+    display: flex;
+    width: auto;
+}
+
+.selector select{
+    margin-top: 0.5rem;
+    margin-right: 1.5rem;
+    height: 3rem;
+    width: 15vw;
+    background-color: rgba(64,63,86, 0.5);
+    color: white;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-container input{
+    margin: 0.5rem;
+    width: 19rem;
+    height: 2.6rem;
+    font-family: Arial;;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-bottom: solid;
+    border-bottom-color: var(--cream);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 0.5rem;
+    color: var(--tan);
+    outline: none;
+}
+
+.search-container button{
+    width: auto;
+    height: 2.3rem;
+    font-family: Arial;;
+    font-size: 2.3rem;
+    background-color: transparent;
+    color: var(--cream);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.search-container button:hover{
+    color: var(--tan);
+    transition: 200ms;
+}
+
+.episodes-ep img{
+    width: 9rem;
+}
+
+.episodes-ep h3{
+    width: 99%;
+    font-size: 2rem;
+}
+
+.episodes-ep p{
+    width: 99%;
+    font-size: 1.4rem;
+}
+
+.load-more h4{
+    color: var(--cream);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 200ms;
+    margin: 2rem 2rem 3rem 2rem;
+}
+
+.load-more h4:hover{
+    color: var(--tan);
+}
+
+.logo-banner{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+.logo-banner img{
+    display: block;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    filter: invert(0);
+    transition: 400ms;
+}
+
+.logo-banner img:hover{
+    transition: 400ms;
+    filter:invert(80%);
+}
+
+/* ABOUT */
+
+.about{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.host{
+    width: 50%;
+    align-self: center;
+}
+
+.host img{
+    width: 100%;
+}
+
+.about-section{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.about-section h2{
+    color: var(--tan);
+}
+
+.about-section h3{
+    color: var(--tan);
+}
+
+.about-section p{
+    color: var(--cream);
+}
+
+.host-info{
+    background-color: rgba(87,85,118, 0.5);
+}
+
+.equipment{
+    background-color: rgba(64,63,86,0.5);
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding:0;
+    
+}
+
+.social-media li{
+    color: var(--cream);
+    cursor: pointer;
+    transition: 200ms;
+    margin-left: 1rem;
+}
+
+.social-media li:hover{
+    color: var(--tan);
+    transition: 200ms;
+}
+
+.about-section h2{
+    width: auto;
+    color: var(--tan);
+    padding: 0.5rem 1rem;
+    margin:0;
+    font-size: 1.5rem;
+}
+
+.about-section ul{
+    margin: 0;
+}
+
+/* CONTACT */
+
+.contact{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.more-contact{
+    width: 50%;
+    justify-content: center;
+}
+
+.contact h2, h3, h4{
+    width: 70%;
+    color: var(--tan);
+    padding: 0.5rem 1rem;
+}
+
+.contact h4{
+    
+    background-color: var(--indigo); 
+}
+
+.contact h3{
+    margin: 0;
+    background-color: var(--purple); 
+    width: 90%;
+}
+.contact p{
+    color: var(--cream);
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.contact-form select, input{
+    border: none;
+    outline: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 93.5%;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Arial';
+    background-color: rgba(249,229,218,0.5);
+    color: var(--cream);
+        font-size: 1.2rem;
+}
+
+.contact-form input{
+    padding-left: 0.5rem;
+}
+
+.contact-form select{
+    width: 95%;
+}
+
+.message{
+    height: 12rem;
+}
+.contact-form button{
+    font-family: 'Arial';
+    background-color: var(--tan);
+    color: var(--dark);
+    font-size: 2rem;
+    width: 95%;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    line-height: 4.5rem;
+    cursor: pointer;
+}
+
+.newsletter input{
+    padding-left: 0.5rem;
+    text-align: center;
+}
+
+.newsletter button{
+    font-family: 'Arial';
+    background-color: var(--indigo);
+    color: var(--cream);
+    border: none;
+    outline: none;
+    width: 95.75%;
+    margin-bottom: 0.5rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.more-contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter h3{
+    width: 90%;
+}
+
+
+/* RESPONSIVO MED 
+
+@media only screen and (max-width: 1300px){
+    .about{
+        width: 90%;
+        
+    }
+    
+    .about-section{
+        align-self: center;
+    }
+    
+    .host{
+        align-self: center;
+    }
+    .about img{
+        height: auto;
+    }
+    .logo-banner img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .logo-banner ul{
+        margin:0;
+        padding: 0;
+    }
+    
+    .searchbar{
+        width: 90%;
+        justify-content: center;
+    }
+    
+    .selector{
+        width: 60%;
+
+    }
+    
+    .selector form{
+    display: flex;
+    width: auto;
+        margin-right: 0;
+}
+    .selector label{
+        height: 2rem;
+        width: 5rem;
+    }
+    
+    .search-label{
+        display: none;
+    }
+
+.selector select{
+    margin-top: 0.5rem;
+    margin-right: 0;
+    height: 3rem;
+    width: 70%;
+    background-color: rgba(64,63,86, 0.5);
+    color: white;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+    .search-container{
+        width: 50%;
+    }
+    .search-container input{
+        width: 95%;
+    }
+    
+    body{
+        overflow:auto;
+        min-height: 99vh;
+    }
+    .main-content{
+        width: 90%;
+        margin: auto;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .latest{
+        margin-top: 6rem;
+    }
+    .logo{
+        margin-top: 1rem;
+        overflow: hidden;
+        width: auto;
+        margin: auto;
+
+    }
+    
+    .logo-bg img{
+        width: 90%;
+    }
+    
+    .logo-text img{
+        width: 90%;
+        padding-left: 5%;
+    }
+    
+    .head-tags{
+        width: 100%;
+        height: 2.5rem;
+        margin: 0;
+    
+    }
+    
+    .index-ep{
+        margin-top: 0.5rem;
+        height: auto;
+        background-color: rgba(87,85,118,0.7);
+    }
+    
+    .mixtape-container{
+        margin: 0;
+    padding-bottom: 0.8rem;
+        background-color: transparent;
+        
+    }
+    
+    .mixtape-container h3{
+        line-height: 2.5rem;
+        margin: 0 0.5rem 0 0;
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    
+    audio{
+        width: 65vw;
+        height: 2rem;
+    }
+    
+    nav{
+        position: sticky;
+        background: rgba(0,0,0,0.7);
+        z-index: 1000;
+        top: 0;
+    }
+    
+    nav ul{
+        margin-top: 1vh;
+        margin-bottom: 0;
+        padding:0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul a{
+        width: 8em;
+        font-size: 18px;
+        line-height: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+    .new{
+        padding: 0rem 1.5rem;
+    }
+    
+    .date{
+    
+    padding: 0.5rem 0rem;
+        line-height: 1rem;
+}
+    .episodes-content{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    
+}
+
+*/
+
+/* RESPONSIVO CH */
+
+@media only screen and (max-width: 1300px){
+    
+    
+    
+    .about{
+        flex-flow: column;
+    }
+    .host{
+        width: 100%;
+    }
+    .about-section{
+        width: 100%;
+    }
+    
+    .logo-banner img{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .logo-banner ul{
+        margin:0;
+        padding: 0;
+    }
+    
+    .searchbar{
+        width: 90%;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    .selector{
+        width: 100%;
+    }
+    
+    .selector form{
+    display: flex;
+    width: auto;
+        margin-right: 0;
+}
+    .selector label{
+        height: 2rem;
+        width: 5rem;
+    }
+    
+    .search-label{
+        display: none;
+    }
+
+.selector select{
+    margin-top: 0.5rem;
+    margin-right: 0;
+    height: 3rem;
+    width: 90%;
+    background-color: rgba(64,63,86, 0.5);
+    color: white;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+    .search-container{
+        width: 100%;
+    }
+    .search-container input{
+        margin: 0;
+        width: 98.5%;
+    }
+    
+    body{
+        overflow:auto;
+        min-height: auto;
+    }
+    .main-content{
+        flex-direction: column;
+        margin: auto;
+        height:auto;
+    }
+    
+    .logo{
+        overflow: hidden;
+        width: 24rem;
+        margin: auto;
+    }
+    
+    .logo-bg img{
+        width: 65%;
+        margin: auto;
+        padding-left: 17.5%;
+    }
+    
+    .logo ul{
+        padding: 0;
+        margin: auto;
+    }
+    
+    .logo-text img{
+        width: 70%;
+        margin-left: 0;
+        padding-top: 15%;
+        padding-left: 17.5%;
+    }
+    
+    .entry{
+        margin-right: 0;
+    }
+    .head-tags{
+    width: auto;
+    margin: 0 0 0 0;
+        height: 2.5rem;
+    
+    }
+    
+    .latest{
+        margin-top: 0;
+    }
+    
+    .index-ep{
+    margin: 1rem 0 0 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(87,85,118,0.7);
+    }
+    
+    .mixtape-container{
+    width: auto;
+    margin: 1rem 0 1rem 0;
+    padding-bottom: 0.8rem;
+        background-color: transparent;
+        
+    }
+    
+    .index-mixtape-container{
+        margin-bottom: 2rem;
+    }
+    
+    .mixtape-container h3{
+        line-height: 2.5rem;
+        margin: 0 0.5rem 0 0;
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    
+    audio{
+        width: 80%;
+        padding-left: 0.5rem;
+    }
+    
+    .audio-container{
+        justify-content: space-around;
+        
+    }
+    
+    .audio-container i{
+        padding-right: 0.5rem;
+    }
+    
+    nav{
+        position: sticky;
+        background: rgba(0,0,0,0.7);
+        z-index: 1000;
+        top: 0;
+    }
+    
+    nav ul{
+        margin-top: 1vh;
+        margin-bottom: 0;
+        padding:0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul a{
+        width: 7em;
+        font-size: 14px;
+        line-height: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+    .new{
+        padding: 0rem 1.5rem;
+    }
+    
+    .date{
+    
+    padding: 0.5rem 0rem;
+        line-height: 1rem;
+}
+    .ep-content a{
+        font-size: 1rem;
+        margin-left: 7px;
+        margin-right: 0;
+    }
+
+
+    
+    .episodes-content{
+        width: 90%;
+    }
+    
+    .episodes-ep h3{
+        font-size: 1rem;
+    }
+    
+    .episodes-ep p{
+        font-size: 1rem;
+    }
+    
+    .episodes-ep img{
+        width: 9rem;
+    }
+    
+}

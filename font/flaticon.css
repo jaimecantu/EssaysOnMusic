@@ -1,0 +1,47 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 05/05/2020 18:50
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 2rem;
+font-style: normal;
+margin-left: 0.5rem;
+}
+
+.flaticon-spotify:before { content: "\f100"; }
+.flaticon-spotify2:before { content: "\f100";}
+.flaticon-soundcloud:before { content: "\f101"; }
+.flaticon-podcast:before { content: "\f102"; }
+.flaticon-magnifying-glass:before { content: "\f103"; }
+.flaticon-twitter:before { content: "\f104"; }
+.flaticon-instagram:before { content: "\f105"; }
+.flaticon-instagram-1:before { content: "\f106"; }
+.flaticon-voice:before { content: "\f107"; }
+.flaticon-headphones:before { content: "\f108"; }
+.flaticon-equalizer:before { content: "\f109"; }
+.flaticon-equalizer-1:before { content: "\f10a"; }
+.flaticon-computer:before { content: "\f10b"; }
+.flaticon-laptop:before { content: "\f10c"; }
+
